@@ -6,11 +6,19 @@
     <title>Jogo de Cartas</title>
 </head>
 <body>
+
+    <div class="jogo"></div>
+
+    <div class="botao">
+        <button onclick="jogo_de_cartas.jogar()">Lançar cartas</button>
+    </div>
     
 
     <script src="js/jogo_de_cartas.js"></script>
     <script>
-        jogo_de_cartas.desenhar();
+        jogo_de_cartas.iniciar(document.querySelector('.jogo'));
+        jogo_de_cartas.start();
+        
 
     </script>
 </body>

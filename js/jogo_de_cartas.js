@@ -26,11 +26,11 @@ const jogo_de_cartas = {
         return carta;
     },
 
-    comparar_vetores: function (vetor1, vetor2) {
-        for (i in vetor1) {
-            if (vetor1[i] > vetor2[i]) {
+    comparar_vetores: function (vetor, vetor2) {
+        for (i in vetor) {
+            if (vetor[i] > vetor2[i]) {
                 this.quantidade_banca++;
-            } else if (vetor1[i] < vetor2[i]) {
+            } else if (vetor[i] < vetor2[i]) {
                 this.quantidade_jogador++;
             } else {
                 this.quantidade_iguais++;
